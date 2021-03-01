@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Главная страница</title>
+</head>
+<body>
+	<form method="post">
+		<label>Введите id абонента</label>
+		<input type="text" name="id" placeholder='Активных абонентов: <%=b%>'><br><br>
+		
+		<label>Выберите способ передачи</label>
+		<select name="inter">
+		<option value="lte" selected>lte</option>
+		<option value="wi-fi">wi-fi</option>
+		<option value="Lora">Lora</option>
+		</select> 
+		<br><br>
+			
+		<label>Введите сообщение для передачи</label>
+		<input type="text" name="message">
+		<br><br>
+		<button type="submit">Submit</button>
+	</form>
+	<br><br>
+	<a href="/list">Список всех отправленных данных</a>
+</body>
+</html>
