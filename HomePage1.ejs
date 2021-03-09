@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Главная страница</title>
+</head>
+<body>
+	<form method="post">
+		<label>Выберите способ передачи</label>
+		<select name="inter">
+		<% arr.forEach(function(item){ %>    
+		<option value=<%= item%>><%= item%></option>
+		<% });  %>
+		</select> 
+		<br><br>
+			
+		<label>Введите сообщение для передачи</label>
+		<input type="text" name="message" >
+		<br><br>
+		<button type="submit">Отправить</button>
+	</form>
+	
+</body>
+</html>
