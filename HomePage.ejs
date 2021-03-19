@@ -8,21 +8,9 @@
 	<form method="post">
 		<label>Введите id абонента</label>
 		<input type="text" name="id" placeholder='Активных абонентов: <%=b%>'><br><br>
-		
-		<label>Выберите способ передачи</label>
-		<select name="inter">
-		<option value="lte" selected>lte</option>
-		<option value="wi-fi">wi-fi</option>
-		<option value="Lora">Lora</option>
-		</select> 
+		<button type="submit">Выбрать</button>
 		<br><br>
-			
-		<label>Введите сообщение для передачи</label>
-		<input type="text" name="message">
-		<br><br>
-		<button type="submit">Submit</button>
+	<a href="/list">Список всех отправленных данных</a>		
 	</form>
-	<br><br>
-	<a href="/list">Список всех отправленных данных</a>
 </body>
 </html>
